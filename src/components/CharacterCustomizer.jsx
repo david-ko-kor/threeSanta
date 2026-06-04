@@ -1218,7 +1218,7 @@ const toggleDance = () => {
     //   updateSantaCharacter(model, santaConfig);
     // });
      loader.load(
-      'models/santa.glb', 
+      '/models/santa.glb', 
       (gltf) => {
         const model = gltf.scene;
 
