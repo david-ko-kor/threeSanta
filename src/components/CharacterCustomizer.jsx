@@ -1171,7 +1171,7 @@ const toggleDance = () => {
       setHasHat(false);
     } else {
       const loader = new GLTFLoader();
-      loader.load('/models/hat_01.glb', (gltf) => {
+      loader.load('models/hat_01.glb', (gltf) => {
         const hat = gltf.scene;
         hat.position.set(0, 0.5, 0); // 위치 조정
         hat.scale.set(2, 1.8, 2.5); // 크기 조정 (필요시 조절)
