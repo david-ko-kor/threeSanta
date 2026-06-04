@@ -1,0 +1,164 @@
+.customizer {
+  display: flex;
+  height: 100vh;
+  background: #f5f5f5;
+}
+
+.viewer {
+  flex: 1;
+  background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%);
+  position: relative;
+}
+
+.controls {
+  width: 350px;
+  background: white;
+  padding: 24px;
+  overflow-y: auto;
+  border-left: 1px solid #e0e0e0;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.controls h2 {
+  margin-bottom: 24px;
+  font-size: 22px;
+  color: #1f1f1f;
+  font-weight: 600;
+}
+
+.control-group {
+  margin-bottom: 24px;
+}
+
+.control-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #666;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.options button {
+  padding: 10px 12px;
+  border: 1.5px solid #e0e0e0;
+  background: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  color: #333;
+}
+
+.options button:hover {
+  border-color: #2196F3;
+  background: #f0f7ff;
+  color: #2196F3;
+}
+
+.options button.active {
+  background: #2196F3;
+  color: white;
+  border-color: #2196F3;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+}
+
+.options button:active {
+  transform: scale(0.98);
+}
+
+.color-palette {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.color-btn {
+  aspect-ratio: 1;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.color-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.color-btn.active {
+  border-color: #333;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  background: #2196F3;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+}
+
+.button-group button:hover {
+  background: #1976D2;
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);
+  transform: translateY(-2px);
+}
+
+.button-group button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+}
+
+.info {
+  background: #f0f7ff;
+  border: 1px solid #b3e5fc;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 12px;
+  color: #0277bd;
+  line-height: 1.6;
+}
+
+.info p {
+  margin: 4px 0;
+}
+
+/* 스크롤바 스타일 */
+.controls::-webkit-scrollbar {
+  width: 6px;
+}
+
+.controls::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.controls::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.controls::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
