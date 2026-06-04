@@ -1209,7 +1209,7 @@ const toggleDance = () => {
 
     // 산타 로드
     const loader = new GLTFLoader();
-    loader.load('/models/Santa.glb', (gltf) => {
+    loader.load('models/Santa.glb', (gltf) => {
       const model = gltf.scene;
       model.scale.set(0.9, 1, 1);
       model.position.y = -0.5;
